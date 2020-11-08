@@ -2,9 +2,9 @@ const express = require('express')
 const app = express()
 const port = process.env.PORT || 3000
 
-const items = [
-    {id: '1', name: 'Iphone 12 Pro Max'},
-    {id: '2', name: 'Iphone 12'}
+const singers = [
+    {id: '1', name: 'NCT'},
+    {id: '2', name: 'Got7'}
 ]
 
 app.get('/', (req, res) => {
@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/item', (req, res) => {
-    return res.json(items)
+    return res.json(singers)
 })
 
 app.listen(port, () => {

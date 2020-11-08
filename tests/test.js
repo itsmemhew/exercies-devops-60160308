@@ -8,13 +8,13 @@ describe('Validate setting the test', () => {
     })
 })
 
-describe('GET "/item"', ()=>{
+describe('GET "/singers"', ()=>{
     it('Something', (done)=>{
         let want = [
-            {id: '1', name: 'Iphone 12 Pro Max'},
-            {id: '2', name: 'Iphone 12'}
+            {id: '1', name: 'NCT'},
+            {id: '2', name: 'Got7'}
         ]
 
-        request(app).get('/item').expect(want, done)
+        request(app).get('/singers').expect(want, done)
     })
 })
